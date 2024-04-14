@@ -38,7 +38,7 @@
     as: auto_shift {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
-        tapping_term_ms = <135>;
+        tapping_term_ms = <200>;
         quick_tap_ms = <0>;
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
@@ -51,11 +51,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N7     &kp N5    &kp N3    &kp N2  &kp N1              &tog 1                                                                 &mo 3  &kp N9    &kp N0    &kp N4  &kp N6     &kp N8  &kp MINUS
-   &kp TAB    &kp SQT  &kp COMMA   &kp DOT     &kp P   &kp Y               &none                                                                 &none   &kp F     &kp G     &kp C   &kp R      &kp L  &kp SLASH
-   &kp ESC      AS(A)      AS(O)     AS(E)     AS(U)    AS(I)              &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none   &kp D     &kp H     &kp T   &kp N      &kp S   &kp BSLH
- &kp LSHFT   &kp SEMI      &kp Q     &kp J     &kp K   &kp X                                 &kp HOME                  &kp PG_UP                         &kp B     &kp M     &kp W   &kp V      &kp Z  &kp RSHFT
-     &mo 2  &kp GRAVE   &kp CAPS  &kp LBKT  &kp RBKT                    &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &mo 2
+ &kp EQUAL      AS(N7)     AS(N5)    AS(N3)    AS(N2)   AS(N1)             &tog 1                                                                 &mo 3   AS(N9)    AS(N0)    AS(N4)  AS(N6)     AS(N8)  AS(MINUS)
+   &kp TAB     AS(SQT)  AS(COMMA)   AS(DOT)     AS(P)    AS(Y)              &none                                                                 &none    AS(F)     AS(G)     AS(C)   AS(R)      AS(L)  AS(SLASH)
+   &kp ESC       AS(A)      AS(O)     AS(E)     AS(U)    AS(I)              &none  &kp LCTRL  &kp LALT                   &kp LGUI  &kp RCTRL      &none    AS(D)     AS(H)     AS(T)   AS(N)      AS(S)   AS(BSLH)
+ &kp LSHFT    AS(SEMI)      AS(Q)     AS(J)     AS(K)    AS(X)                                &kp HOME                  &kp PG_UP                          AS(B)     AS(M)     AS(W)   AS(V)      AS(Z) &kp RSHFT
+     &mo 2   AS(GRAVE)  &kp CAPS   AS(LBKT)  AS(RBKT)                   &kp BSPC    &kp DEL   &kp END                  &kp PG_DN  &kp ENTER  &kp SPACE          &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT      &mo 2
             >;
         };
 
